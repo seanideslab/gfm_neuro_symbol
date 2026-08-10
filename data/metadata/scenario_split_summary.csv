@@ -1,0 +1,10 @@
+split,scenarios,trajectories,purpose_or_regime
+training,120,1200,model fitting
+validation,30,300,hyperparameter and GSR decisions
+ID test,30,300,new combinations and seeds
+SCR instability stress,20,200,boundary-crossing grid-strength stress
+Delay instability stress,15,150,boundary-crossing delay stress
+Limiter-mode OOD,15,150,stable mode-pattern shift
+Compound stress,25,250,multiple simultaneous shifts
+Stable near-boundary OOD,30,300,SCR 1.9-2.0 and delay 1.8-2.0 Ts; stable held-out generalization
+Instability diagnostic ensemble,combined stress set,500,"time-to-divergence, growth-rate, instability detection"

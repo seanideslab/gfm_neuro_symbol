@@ -1,0 +1,27 @@
+architecture:
+  stages: 3
+  conditioning_input_stage: 1
+  chebkan_hidden_layers: 2
+  width: 64
+  conditioning_rank: 4
+  chebyshev_degree_K: 4
+
+training:
+  optimizer: "AdamW"
+  epochs: 800
+  batch_size: 256
+  learning_rate_initial: 1.0e-3
+  scheduler: "cosine annealing"
+  learning_rate_final: 1.0e-5
+  rollout_horizon_steps: 100
+  integration_method: "fixed-step RK4"
+  integration_step_ms: 1
+
+loss_weights:
+  trajectory_reconstruction_mse: 1.0
+  physics_conservation: 0.1
+  l1_sparsity: 1.0e-4
+
+random_seeds:
+  count: 5
+  values: ["TODO_USER", "TODO_USER", "TODO_USER", "TODO_USER", "TODO_USER"]

@@ -1,0 +1,21 @@
+emt_solver:
+  software: "MATLAB/Simulink R2023b + Simscape Electrical/Specialized Power Systems 8.0"
+  solver: "ode23tb"
+  emt_step_us: 1
+
+dq_transform:
+  angle_source: "controller internal angle"
+  transform: "amplitude-invariant Park transform"
+
+anti_alias_filter:
+  type: "TODO_USER"
+  order: "TODO_USER"
+  cutoff_Hz: "TODO_USER"
+  phase_implementation: "TODO_USER  # causal or zero-phase"
+
+pwm_averaging:
+  window: "TODO_USER"
+
+resampling:
+  output_period_ms: 1
+  method: "TODO_USER"

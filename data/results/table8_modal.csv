@@ -1,0 +1,8 @@
+metric,Averaged_reference,EMT_Prony,MLP_residual,Continuous_RC_ChebKAN,Symbolic_RC_ChebKAN
+dominant_mode,-5.2 + j18.5,-14.8 + j122.4,-11.5 + j105.2,-14.5 + j121.8,-14.6 + j121.5
+damping_ratio,"0.274 [0.265,0.282]","0.124 [0.115,0.133]","0.109 [0.095,0.122]","0.118 [0.111,0.126]","0.121 [0.117,0.126]"
+critical_SCR,2.15,1.83,1.95,1.84,1.85
+critical_delay_Ts,1.5,2.2,1.8,2.15,2.15
+frequency_nadir_Hz,49.65,49.12,49.3,49.15,49.14
+RoCoF_Hz_per_s,0.25,0.85,0.65,0.82,0.83
+settling_time_s,0.45,0.85,0.7,0.83,0.84

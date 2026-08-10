@@ -1,0 +1,12 @@
+typed_gsr:
+  pruning_threshold: 5.0e-3
+  epsilon_abs: 1.0e-4
+  epsilon_rel: 1.0e-3
+  final_simplifier: "SymPy 1.12"
+  coefficient_refit: "unregularized refit in SI coordinates"
+  acceptance_metric: "validation end-to-end rollout loss"
+
+reported_symbolification_gap:
+  definition: "NRMSE(symbolic RC-ChebKAN) - NRMSE(continuous RC-ChebKAN)"
+  unit: "percentage points"
+  across_regime_range_pp: [0.3, 0.7]

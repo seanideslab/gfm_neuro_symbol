@@ -1,0 +1,36 @@
+target:
+  dsp: "TI TMS320F28379D"
+  clock_MHz: 100
+  symbolic_operator_count: 54
+controller_budget_us: 100
+
+real_time_simulator:
+  platform: "OPAL-RT"
+  hardware: "OP5033 / OP4610"
+  real_time_step_us: "TODO_USER"
+
+desktop_benchmark:
+  cpu: "Intel Core i9-13900K"
+  mode: "single thread, Hyper-Threading disabled"
+  memory: "64 GB DDR5-5600"
+  python: "3.10"
+  pytorch: "2.2.0"
+  compile: "torch.compile / TorchDynamo C++ backend"
+  mean_symbolic_residual_us: 18.5
+
+dsp_latency_us:
+  median: 12.4
+  p95: 14.1
+  p99: 16.5
+  max: 18.2
+
+overrun:
+  result: "No residual-kernel overrun in tested unbalanced-fault controller-HIL cases"
+  raw_log: "TODO_USER"
+
+measurement_metadata:
+  compiler: "TODO_USER"
+  compiler_flags: "TODO_USER"
+  arithmetic_precision: "TODO_USER"
+  timing_sample_count: "TODO_USER"
+  test_duration_s: "TODO_USER"

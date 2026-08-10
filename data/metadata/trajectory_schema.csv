@@ -1,0 +1,29 @@
+column,unit_or_type,role,description
+trajectory_id,string,identifier,unique trajectory identifier
+scenario_id,string,identifier,scenario identifier
+split,categorical,metadata,train/validation/ID/OOD/stress
+time_s,s,time,resampled envelope time
+i_fd,A,state,inverter-side d-axis inductor current
+i_fq,A,state,inverter-side q-axis inductor current
+v_cd,V,state,filter-capacitor d-axis voltage
+v_cq,V,state,filter-capacitor q-axis voltage
+i_gd,A,state,grid-side d-axis current
+i_gq,A,state,grid-side q-axis current
+P_f,W,state,filtered active power
+Q_f,var,state,filtered reactive power
+delta,rad,state,internal-grid angle difference
+xi_vd,implementation units,controller state,voltage-loop d-axis integrator
+xi_vq,implementation units,controller state,voltage-loop q-axis integrator
+xi_id,implementation units,controller state,current-loop d-axis integrator
+xi_iq,implementation units,controller state,current-loop q-axis integrator
+z_id,A,delay state,first-order delayed d-axis current state
+z_iq,A,delay state,first-order delayed q-axis current state
+P_star,W or pu,input,active-power command; document storage convention
+Q_star,var or pu,input,reactive-power command; document storage convention
+V_star,V or pu,input,voltage command; document storage convention
+omega_star,rad/s or pu,input,frequency command; document storage convention
+SCR,dimensionless,context,short-circuit ratio
+X_over_R,dimensionless,context,grid impedance ratio
+tau_d_s,s,context,digital delay
+m_limit,0/1,mode,current-reference limiter active
+m_sat,0/1,mode,modulation-voltage saturation active

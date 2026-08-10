@@ -1,0 +1,8 @@
+metric,value,unit
+desktop mean symbolic residual,18.5,us
+DSP median,12.4,us
+DSP p95,14.1,us
+DSP p99,16.5,us
+DSP max,18.2,us
+controller budget,100,us
+symbolic operator count,54,operators

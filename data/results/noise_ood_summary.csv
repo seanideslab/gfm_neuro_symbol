@@ -1,0 +1,3 @@
+model,mean_nrmse_percent,sd_percent
+RC-ChebKAN,3.2,0.5
+Symbolic RC-ChebKAN,3.6,0.6

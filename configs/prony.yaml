@@ -1,0 +1,20 @@
+signals: ["P_f","i_gd"]
+ringdown_window_s: [0.1, 1.5]
+preprocessing:
+  detrend: true
+  lowpass:
+    cutoff_Hz: 100
+    phase: "zero-phase"
+rank_selection: "SVD"
+candidate_model_order: [10, 20]
+mode_matching:
+  frequency_band_Hz: [5, 30]
+  participation_states: ["delta","P_f"]
+uncertainty: "trajectory bootstrap 95% CI"
+critical_boundary_scan:
+  SCR_resolution: 0.05
+  delay_resolution_Ts: 0.1
+equilibrium_solver: "Newton-Raphson for each SCR"
+fixed_mode_for_jacobian:
+  m_limit: 0
+  m_sat: 0

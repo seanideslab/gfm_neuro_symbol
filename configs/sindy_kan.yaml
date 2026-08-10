@@ -1,0 +1,16 @@
+library:
+  unary: ["1","z","z^2","z^3","sin(z)","cos(z)","abs(z)","tanh(z)","sat(z)"]
+  binary_after_node_aggregation: ["z1*z2","z1/z2"]
+
+formulation: "weak/integral"
+sparsifier: "STRRidge"
+lambda_ST_grid: [1.0e-5, 5.0e-5, 1.0e-4, 5.0e-4, 1.0e-3, 5.0e-3, 1.0e-2, 1.0e-1]
+alpha_grid: [0.0, 1.0e-4, 1.0e-3, 1.0e-2]
+max_iterations: 20
+selection_metric: "validation multi-step rollout NRMSE"
+selected:
+  lambda_ST: 1.0e-3
+  alpha: 1.0e-4
+coefficient_refit: "unpenalized OLS"
+rollout_integrator: "fixed-step RK4"
+rollout_step_ms: 1

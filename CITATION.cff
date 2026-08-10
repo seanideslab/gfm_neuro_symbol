@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and archived release."
+title: "Physics-Constrained Neuro-Symbolic Identification of Grid-Forming Inverter Dynamics under Regime Shifts"
+type: software
+authors:
+  - family-names: "Tsai"
+    given-names: "Shang-En"
+  - family-names: "Aun"
+    given-names: "Meng-Hing"
+  - family-names: "Sun"
+    given-names: "Wei-Cheng"
+repository-code: "[GITHUB_URL]"
+version: "[RELEASE_TAG]"
+doi: "[DOI]"
+license: "[CHOOSE_LICENSE]"

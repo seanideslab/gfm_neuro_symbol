@@ -1,0 +1,24 @@
+score:
+  name: "raw whitened nearest-neighbor distance"
+  symbol: "d_VD"
+  formula: "min_i ||L(z-z_i)||_2, with L^T L=(Sigma+lambda I)^(-1)"
+threshold:
+  calibration: "95th percentile of validation-set distance distribution"
+failure_definition:
+  rollout_NRMSE_percent_gt: 15
+fallback:
+  action: "disable symbolic residual and use physics-only model"
+reported:
+  AUROC: 0.942
+  AUPRC: 0.895
+  ID_false_positive_rate: 0.048
+  safe_coverage: 0.845
+  worst_case_NRMSE_without_fallback_percent: 41.5
+  worst_case_NRMSE_with_fallback_percent: 24.2
+  far_out_fault:
+    SCR: 1.0
+    warning_time_ms: 12
+    symbolic_failure_time_ms: 30
+    warning_lead_time_ms: 18
+reference_set_count_for_roc: "TODO_USER"
+regularization_lambda: "TODO_USER"

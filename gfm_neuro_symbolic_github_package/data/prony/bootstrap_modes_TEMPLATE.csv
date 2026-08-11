@@ -1,0 +1,2 @@
+scenario_id,trajectory_id,bootstrap_id,signal,model_order,lambda_real,lambda_imag,damping_ratio,mode_frequency_Hz,matched_symbolic_mode
+EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,P_f,EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,,,,,

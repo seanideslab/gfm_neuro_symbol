@@ -1,0 +1,25 @@
+{
+  "target_corrected_pole": {
+    "real_per_s": -15.295648481756285,
+    "imag_rad_per_s": 122.4,
+    "formatted": "-15.30 + j122.4"
+  },
+  "mathematical_consistency": {
+    "damping_ratio_target": 0.124,
+    "status": "CONFIRMED"
+  },
+  "raw_export_crosscheck": {
+    "original_raw_prony_export_found_in_supplied_files": true,
+    "status": "CONFIRMED",
+    "source_file": "data/prony/prony_raw_export_original.csv",
+    "normalized_file": "data/prony/prony_raw_export.csv",
+    "matched_bootstrap_id": 5,
+    "matched_pole": {
+      "real_per_s": -15.3,
+      "imag_rad_per_s": 122.4,
+      "damping_ratio_zeta": 0.124,
+      "frequency_Hz": 19.48
+    },
+    "statement": "The supplied original Prony export directly confirms the corrected representative pole -15.30 + j122.40."
+  }
+}

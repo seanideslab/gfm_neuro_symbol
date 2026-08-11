@@ -1,0 +1,22 @@
+emt_solver:
+  software: "MATLAB/Simulink R2023b + Simscape Electrical/Specialized Power Systems 8.0"
+  solver: "ode23tb"
+  emt_step_us: 1
+
+dq_transform:
+  angle_source: "controller internal angle"
+  transform: "amplitude-invariant Park transform"
+
+anti_alias_filter:
+  type: "2nd-order Butterworth low-pass"
+  order: 2
+  cutoff_Hz: 300
+  phase_implementation: "zero-phase forward-backward filtering (MATLAB filtfilt)"
+
+pwm_averaging:
+  window: "one PWM period (100 us at 10 kHz switching frequency)"
+
+resampling:
+  output_period_ms: 1
+  output_rate_Hz: 1000
+  method: "uniform resampling after zero-phase low-pass filtering and one-PWM-period averaging"

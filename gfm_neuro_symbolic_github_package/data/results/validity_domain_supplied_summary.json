@@ -1,0 +1,30 @@
+{
+  "provenance": "user-supplied summary statistics/timepoints from 原始數據紀錄補充.pdf",
+  "threshold_d_VD": 2.15,
+  "training_validation": {
+    "mean": 1.2,
+    "sd": 0.4,
+    "note": "threshold approximately 95th percentile"
+  },
+  "ID_test": {
+    "mean": 1.3,
+    "sd": 0.5,
+    "reported_fraction_above_threshold": 0.048
+  },
+  "far_out_fault_SCR_1_0": [
+    {
+      "time_ms": 12,
+      "d_VD": 2.18,
+      "event": "warning threshold crossed"
+    },
+    {
+      "time_ms": 30,
+      "d_VD": 5.4,
+      "event": "symbolic failure time"
+    }
+  ],
+  "reported_warning_lead_time_ms": 18,
+  "reported_AUROC": 0.942,
+  "reported_AUPRC": 0.895,
+  "data_integrity_note": "Individual d_VD samples were not supplied, so this file is a summary, not a raw-score dataset."
+}

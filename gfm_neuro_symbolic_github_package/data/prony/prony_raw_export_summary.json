@@ -1,0 +1,33 @@
+{
+  "source_file": "code-1786374447603.txt",
+  "rows": 20,
+  "representative_pole_confirmation": {
+    "target": {
+      "real_per_s": -15.3,
+      "imag_rad_per_s": 122.4
+    },
+    "closest_bootstrap_id": 5,
+    "closest_row": {
+      "bootstrap_id": 5,
+      "lambda_real": -15.3,
+      "lambda_imag": 122.4,
+      "damping_ratio_zeta": 0.124,
+      "frequency_Hz": 19.48
+    },
+    "exact_match": true,
+    "zeta_recomputed_from_pole": 0.12403473458920845,
+    "frequency_recomputed_Hz": 19.48056503444799,
+    "status": "CONFIRMED"
+  },
+  "bootstrap_range": {
+    "real_min": -15.65,
+    "real_max": -14.95,
+    "imag_min": 121.8,
+    "imag_max": 122.9,
+    "zeta_min": 0.1219,
+    "zeta_max": 0.1263,
+    "frequency_min_Hz": 19.38,
+    "frequency_max_Hz": 19.56
+  },
+  "note": "The original export directly contains Bootstrap_ID 5 = -15.30 + j122.40 with zeta 0.1240 and frequency 19.48 Hz."
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+*.tmp
+*.log
+
+# Large artifacts: use Git LFS or an external DOI archive if needed
+data/processed/*.parquet
+data/processed/*.h5
+data/processed/*.hdf5
+data/processed/*.mat
+models/*.pt
+models/*.pth
+models/*.ckpt

@@ -1,0 +1,43 @@
+target:
+  dsp: "TI TMS320F28379D"
+  clock_MHz: 100
+  timer_resolution_ns: 10
+  symbolic_operator_count: 54
+controller_budget_us: 100.0
+
+compiler:
+  version: "TI C2000 CGT v22.6.0.LTS"
+  optimization_flags: "-O3 --opt_for_speed=5"
+  fpu_support: "fpu32"
+  tmu_support: "tmu0"
+
+real_time_simulator:
+  platform: "OPAL-RT"
+  hardware: "OP5033 / OP4610"
+  real_time_step_us: "not reported in supplied evidence"
+
+desktop_benchmark:
+  cpu: "Intel Core i9-13900K"
+  mode: "single thread, Hyper-Threading disabled"
+  memory: "64 GB DDR5-5600"
+  python: "3.10"
+  pytorch: "2.2.0"
+  compile: "torch.compile / TorchDynamo C++ backend"
+  mean_symbolic_residual_us: 18.5
+
+measured_dsp_timing_campaign:
+  total_samples: 10000
+  task_overruns: 0
+  min_us: 11.8
+  median_us: 12.4
+  mean_us: 12.6
+  p95_us: 14.1
+  p99_us: 16.5
+  max_observed_us: 18.2
+  representative_excerpt_rows: 25
+  representative_excerpt_file: "data/hil/HIL_raw_logs.csv"
+  environment_json: "data/results/HIL_test_environment.json"
+
+scope:
+  statement: "Measured timing supports isolated symbolic-kernel feasibility within the 100 us control budget."
+  limitation: "Maximum observed execution time is not a formal analytical WCET bound for the complete controller task."

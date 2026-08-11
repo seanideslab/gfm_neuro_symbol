@@ -1,0 +1,12 @@
+metric,value,unit_or_note
+AUROC,0.942,
+AUPRC,0.895,
+ID false-positive rate,0.048,fraction
+safe coverage,0.845,fraction of reliable predictions retained
+failure threshold,15.0,NRMSE percent
+worst-case NRMSE without fallback,41.5,percent
+worst-case NRMSE with fallback,24.2,percent
+far-out fault SCR,1.0,
+warning threshold crossing,12,ms after fault inception
+symbolic failure criterion,30,ms after fault inception
+warning lead time,18,ms

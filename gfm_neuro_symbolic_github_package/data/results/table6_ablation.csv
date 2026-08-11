@@ -1,0 +1,8 @@
+variant,rollout_nrmse_percent,symbolification_gap_pp,operators,invalid_terms,core_term_recovery_percent,modal_error_percent
+Full method,2.4,0.3,54,0,94.5,1.2
+Without physics residual,21.5,8.2,185,0,45.2,18.5
+B-spline basis,4.1,1.5,76,0,82.3,4.1
+Without regime conditioning,5.6,1.1,68,0,85.1,5.8
+Without mode indicator,8.3,2.4,82,0,71.4,9.2
+Without typed grammar,2.8,0.5,65,14,68.5,3.5
+Edge-wise symbolification,6.5,4.4,59,0,58.2,7.8

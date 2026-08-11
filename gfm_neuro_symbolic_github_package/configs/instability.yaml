@@ -1,0 +1,28 @@
+ensemble:
+  total: 500
+  stable: 250
+  unstable: 250
+
+symbolic_local_instability_rule:
+  criterion: "Re(lambda_max) > 0"
+
+emt_divergence_rule:
+  signal: "moving-average envelope of converter-current magnitude ||i_f||_2"
+  threshold_pu: 1.5
+  persistence_ms: 10
+  t_div_definition: "initial threshold crossing that satisfies the persistence condition"
+
+confusion_matrix:
+  TP: 246
+  FN: 4
+  TN: 248
+  FP: 2
+
+reported:
+  sensitivity: 0.984
+  specificity: 0.992
+  accuracy: 0.988
+  balanced_accuracy: 0.988
+  wilson_95_ci: [0.974, 0.995]
+  time_to_divergence_abs_error_ms_max: 4.2
+  dominant_growth_rate_relative_error: 0.023

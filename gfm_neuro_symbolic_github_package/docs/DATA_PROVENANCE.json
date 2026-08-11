@@ -1,0 +1,17 @@
+{
+  "data/symbolic/seed_coefficients_raw.csv": "user-supplied corrected values from 修正.pdf",
+  "data/sindy/sindy_kan_grid.csv": "user-supplied grid",
+  "data/results/compound_stress_paired_differences_supplied.csv": "user-supplied corrected differences from 修正.pdf",
+  "data/results/validity_domain_supplied_summary.json": "user-supplied summary only",
+  "data/prony/prony_bootstrap_partial_supplied.csv": "user-supplied 10 points",
+  "data/synthetic_examples/dsp_timing_synthetic_demo_10000.csv": "synthetic test fixture, not evidence",
+  "data/synthetic_examples/prony_bootstrap_mixed_demo_20.csv": "mixed user-supplied + synthetic extension, not evidence",
+  "data/prony/damping_ratio_consistency_correction.json": "mathematical consistency correction derived from user-prescribed zeta and imaginary part; confirm against raw Prony export",
+  "data/prony/prony_raw_export_original.csv": "user-supplied original Prony export from code-1786374447603.txt",
+  "data/prony/prony_raw_export.csv": "normalized copy of the user-supplied original Prony export",
+  "data/prony/prony_source_verification.json": "raw-source confirmation completed; Bootstrap_ID 5 confirms -15.30+j122.40",
+  "repository_url": "https://github.com/seanideslab/gfm_neuro_symbol",
+  "data/results/HIL_test_environment.json": "user-supplied measured controller-HIL test-environment and full 10,000-call aggregate timing summary",
+  "data/hil/HIL_raw_logs.csv": "user-supplied representative 25-row measured excerpt from the 10,000-call DSP timing campaign",
+  "data/hil/HIL_raw_logs_metadata.json": "repository metadata clarifying excerpt/full-campaign evidence scope"
+}

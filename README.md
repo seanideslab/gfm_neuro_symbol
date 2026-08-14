@@ -55,18 +55,3 @@ Some newly supplied summaries do not exactly reproduce previously reported manus
 
 ## HIL timing evidence
 The measured DSP timing campaign is documented by `data/results/HIL_test_environment.json` (10,000-call aggregate test environment/statistics) and `data/hil/HIL_raw_logs.csv` (25-row representative measured excerpt). The excerpt is provided for auditability while the aggregate JSON records the full-campaign statistics.
-
-
-## 2026-08-13 manuscript-alignment update
-
-This release metadata is aligned to the corrected manuscript. The update:
-
-- makes the Section 2.1 base/controller parameters explicit;
-- records the corrected and distinct active/reactive power equations;
-- separates the **0.924%** relative complex-eigenvalue error from the **2.419%** damping-ratio relative difference;
-- documents the averaged-reference 2.94 Hz versus EMT/Prony 19.48 Hz baseline mode mismatch;
-- records the GitHub repository and Zenodo DOI `10.5281/zenodo.21881580`;
-- keeps synthetic plotting examples outside the experimental-evidence folders.
-
-See `docs/MANUSCRIPT_ALIGNMENT_2026-08-13.md` and
-`data/results/manuscript_alignment_2026-08-13.json`.

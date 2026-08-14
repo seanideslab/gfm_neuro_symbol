@@ -1,13 +1,9 @@
 # Data Availability Statement
 
-The simulation configurations, processed 1 ms envelope-level trajectory data, scenario-level split identifiers,
-trained model parameters, extracted symbolic equations, and analysis scripts supporting the findings of this study
-are available at https://github.com/seanideslab/gfm_neuro_symbol. The repository also contains preprocessing
-configuration, SINDy-KAN settings and outputs, instability-diagnostic labels, scenario-level statistical summaries,
-the original Prony export, validity-domain metadata, and controller-HIL timing evidence.
+## Recommended manuscript wording now that the GitHub repository is available
 
-The versioned release is permanently archived on Zenodo:
-https://doi.org/10.5281/zenodo.21881580
+The simulation configurations, processed envelope-level trajectory data, scenario-level split identifiers, trained model parameters, extracted symbolic equations, and analysis scripts supporting the findings of this study are available at https://github.com/seanideslab/gfm_neuro_symbol. The repository also contains scenario-level summary results, instability-diagnostic labels, symbolic-regression settings, modal-analysis configuration, validity-domain metadata, and controller-HIL timing metadata required to reproduce the reported analyses. A preservation DOI will be added after archival of the versioned release. Proprietary MATLAB/Simulink, Simscape Electrical, OPAL-RT, and vendor-specific components are not redistributed; non-proprietary configuration files and processed outputs are provided to permit independent reimplementation.
 
-Proprietary MATLAB/Simulink, Simscape Electrical, OPAL-RT, and vendor-specific components are not redistributed;
-non-proprietary configurations and processed outputs are provided to permit independent reimplementation.
+## After DOI archival
+
+Append the archival DOI and release tag `v1.0.0` to the first sentence above.

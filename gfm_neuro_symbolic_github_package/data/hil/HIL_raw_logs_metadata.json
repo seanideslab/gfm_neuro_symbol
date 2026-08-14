@@ -1,0 +1,11 @@
+{
+  "file": "HIL_raw_logs.csv",
+  "evidence_type": "representative measured excerpt",
+  "excerpt_rows": 25,
+  "full_campaign_total_samples": 10000,
+  "full_campaign_task_overruns": 0,
+  "full_campaign_statistics_source": "../results/HIL_test_environment.json",
+  "cpu_clock_frequency_mhz": 100,
+  "cycle_conversion": "At 100 MHz, 1 microsecond = 100 CPU cycles.",
+  "scope_note": "The CSV contains 25 representative measured samples spanning nominal execution, jitter/branch/interruption cases, p95/p99 boundaries, and the maximum observed protection-logic path. It is not the full 10,000-row trace."
+}

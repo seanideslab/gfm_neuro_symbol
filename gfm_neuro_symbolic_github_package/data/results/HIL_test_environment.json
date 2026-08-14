@@ -1,0 +1,24 @@
+{
+  "test_environment": {
+    "target_mcu": "TI TMS320F28379D",
+    "cpu_clock_frequency_mhz": 100,
+    "timer_resolution_ns": 10,
+    "compiler_version": "TI C2000 CGT v22.6.0.LTS",
+    "optimization_flags": "-O3 --opt_for_speed=5",
+    "fpu_support": "fpu32",
+    "tmu_support": "tmu0"
+  },
+  "task_configuration": {
+    "control_period_us": 100.0,
+    "total_samples": 10000,
+    "task_overruns": 0
+  },
+  "execution_statistics_us": {
+    "min": 11.8,
+    "median": 12.4,
+    "mean": 12.6,
+    "p95": 14.1,
+    "p99": 16.5,
+    "max": 18.2
+  }
+}

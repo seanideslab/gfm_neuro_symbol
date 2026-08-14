@@ -1,0 +1,17 @@
+{
+  "source": "修正.pdf",
+  "constraint": {
+    "imaginary_part_rad_per_s": 122.4,
+    "damping_ratio": 0.124
+  },
+  "derived_real_part_per_s": -15.295648481756285,
+  "corrected_representative_pole": {
+    "real_per_s": -15.295648481756285,
+    "imag_rad_per_s": 122.4,
+    "formatted": "-15.30 + j122.4"
+  },
+  "derived_frequency_Hz": 19.48056503444799,
+  "symbolic_reference_pole": "-14.6 + j121.5",
+  "symbolic_relative_complex_eigenvalue_error": 0.0092216502494817,
+  "provenance_note": "The real part is mathematically derived from the user-prescribed imaginary part and damping ratio. It should be treated as a corrected consistency value and confirmed against the original Prony export before archival as raw experimental output."
+}

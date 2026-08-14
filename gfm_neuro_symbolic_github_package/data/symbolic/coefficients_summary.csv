@@ -1,0 +1,8 @@
+coefficient,median,IQR,SI_unit,equation_role
+c1,14500.0,400.0,V s^-1 A^-1,r_vcd delayed-current mismatch
+c2,-8200.0,350.0,V s^-1,r_vcd limiter-activated correction
+c3,0.0125,0.0008,A^-1,tanh input scaling
+c4,312.0,18.0,A V^-1 s^-1,r_igd delay-sensitive voltage term
+c5,4880.0,220.0,s^-1,r_igd low-X/R cross coupling
+c6,-275.0,15.0,s^-2,r_Pf delay-dependent correction
+c7,1.05,0.04,dimensionless,r_delta droop-margin saturation

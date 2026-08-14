@@ -1,0 +1,4 @@
+method,active_terms,tree_depth,MDL_bits,symbolification_gap_pp,extraction_time_min
+Edge-wise fitting,85.4,4.2,312.5,4.4,0.5
+SINDy-KAN,112.3,3.5,425.1,6.2,1.2
+Typed GSR,54.2,3.1,185.3,0.3-0.7,2.1

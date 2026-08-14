@@ -1,0 +1,131 @@
+{
+  "provenance": "user-supplied grid from 原始數據紀錄補充.pdf",
+  "selected": {
+    "lambda_ST": 0.001,
+    "alpha": 0.0001,
+    "validation_rollout_NRMSE_percent": 4.1
+  },
+  "grid": [
+    {
+      "lambda_ST": 0.0001,
+      "alpha": 0.0,
+      "validation_rollout_NRMSE_percent": 6.8,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.0001,
+      "alpha": 0.0001,
+      "validation_rollout_NRMSE_percent": 6.5,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.0001,
+      "alpha": 0.001,
+      "validation_rollout_NRMSE_percent": 7.1,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.0001,
+      "alpha": 0.01,
+      "validation_rollout_NRMSE_percent": 8.4,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.0005,
+      "alpha": 0.0,
+      "validation_rollout_NRMSE_percent": 5.2,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.0005,
+      "alpha": 0.0001,
+      "validation_rollout_NRMSE_percent": 4.8,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.0005,
+      "alpha": 0.001,
+      "validation_rollout_NRMSE_percent": 5.5,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.0005,
+      "alpha": 0.01,
+      "validation_rollout_NRMSE_percent": 7.2,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.001,
+      "alpha": 0.0,
+      "validation_rollout_NRMSE_percent": 4.5,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.001,
+      "alpha": 0.0001,
+      "validation_rollout_NRMSE_percent": 4.1,
+      "selected": true
+    },
+    {
+      "lambda_ST": 0.001,
+      "alpha": 0.001,
+      "validation_rollout_NRMSE_percent": 4.6,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.001,
+      "alpha": 0.01,
+      "validation_rollout_NRMSE_percent": 6.5,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.005,
+      "alpha": 0.0,
+      "validation_rollout_NRMSE_percent": 5.8,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.005,
+      "alpha": 0.0001,
+      "validation_rollout_NRMSE_percent": 5.4,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.005,
+      "alpha": 0.001,
+      "validation_rollout_NRMSE_percent": 5.9,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.005,
+      "alpha": 0.01,
+      "validation_rollout_NRMSE_percent": 7.8,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.01,
+      "alpha": 0.0,
+      "validation_rollout_NRMSE_percent": 8.2,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.01,
+      "alpha": 0.0001,
+      "validation_rollout_NRMSE_percent": 7.9,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.01,
+      "alpha": 0.001,
+      "validation_rollout_NRMSE_percent": 8.5,
+      "selected": false
+    },
+    {
+      "lambda_ST": 0.01,
+      "alpha": 0.01,
+      "validation_rollout_NRMSE_percent": 10.1,
+      "selected": false
+    }
+  ],
+  "note": "The supplied surface contains five lambda_ST rows. Values for 1e-5, 5e-5, and 1e-1 from the broader configured search grid were not supplied here."
+}

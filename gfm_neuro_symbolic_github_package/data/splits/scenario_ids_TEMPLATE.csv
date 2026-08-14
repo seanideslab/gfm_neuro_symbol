@@ -1,0 +1,2 @@
+scenario_id,split,trajectory_id,seed_id,SCR,X_over_R,tau_d_Ts,P_star_pu,Q_star_pu,sag_depth_pu,phase_jump_deg,m_limit_pattern,m_sat_pattern,SNR_dB
+EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,,,,,,,,,,

@@ -1,0 +1,55 @@
+{
+  "method": "25th/75th percentiles of the five corrected supplied seed values",
+  "status": "all seven median/IQR summaries now reproduce the manuscript values",
+  "coefficients": {
+    "c1": {
+      "median": 14500.0,
+      "Q1": 14300.0,
+      "Q3": 14700.0,
+      "IQR": 400.0,
+      "unit": "V s^-1 A^-1"
+    },
+    "c2": {
+      "median": -8200.0,
+      "Q1": -8375.0,
+      "Q3": -8025.0,
+      "IQR": 350.0,
+      "unit": "V s^-1"
+    },
+    "c3": {
+      "median": 0.0125,
+      "Q1": 0.0121,
+      "Q3": 0.0129,
+      "IQR": 0.0008000000000000004,
+      "unit": "A^-1"
+    },
+    "c4": {
+      "median": 312.0,
+      "Q1": 305.0,
+      "Q3": 323.0,
+      "IQR": 18.0,
+      "unit": "A V^-1 s^-1"
+    },
+    "c5": {
+      "median": 4880.0,
+      "Q1": 4800.0,
+      "Q3": 5020.0,
+      "IQR": 220.0,
+      "unit": "s^-1"
+    },
+    "c6": {
+      "median": -275.0,
+      "Q1": -282.0,
+      "Q3": -267.0,
+      "IQR": 15.0,
+      "unit": "s^-2"
+    },
+    "c7": {
+      "median": 1.05,
+      "Q1": 1.03,
+      "Q3": 1.07,
+      "IQR": 0.040000000000000036,
+      "unit": "dimensionless"
+    }
+  }
+}

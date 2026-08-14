@@ -1,0 +1,13 @@
+{
+  "provenance": "corrected 25-scenario paired differences from 修正.pdf",
+  "difference_definition": "Symbolic RC-ChebKAN NRMSE - RC-Spline-KAN NRMSE",
+  "n": 25,
+  "median_difference_pp": -5.8,
+  "rank_sum_total": 325.0,
+  "W_improvement": 310.0,
+  "W_worse": 15.0,
+  "rank_biserial_r": 0.9076923076923077,
+  "wilcoxon_two_sided_exact_p": 8.165836334228516e-06,
+  "rounded_manuscript_r": 0.91,
+  "status": "median and rank-biserial now reproduce the intended manuscript values; raw p updated to the exact value from this corrected vector"
+}

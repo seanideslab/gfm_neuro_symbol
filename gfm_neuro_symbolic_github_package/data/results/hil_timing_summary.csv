@@ -1,0 +1,18 @@
+metric,value,unit_or_note
+target DSP,TI TMS320F28379D,
+clock frequency,100,MHz
+timer resolution,10,ns
+compiler,TI C2000 CGT v22.6.0.LTS,
+optimization flags,-O3 --opt_for_speed=5,
+FPU/TMU,fpu32 / tmu0,
+full timing samples,10000,calls
+task overruns,0,count
+DSP min,11.8,us
+DSP median,12.4,us
+DSP mean,12.6,us
+DSP p95,14.1,us
+DSP p99,16.5,us
+DSP max observed,18.2,us
+controller budget,100,us
+symbolic operator count,54,operators
+representative released timing rows,25,rows

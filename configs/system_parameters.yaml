@@ -1,0 +1,54 @@
+system:
+  S_base_kVA: 100.0
+  V_base_line_line_V: 400.0
+  f_base_Hz: 50.0
+  Z_base_ohm: 1.6
+  I_base_line_rms_A: 144.34
+  I_base_phase_peak_A: 204.12
+  L_base_mH: 5.093
+  C_base_uF: 1989.44
+filter:
+  L_f_mH: 0.6
+  R_f_ohm: 0.015
+  C_f_uF: 50.0
+  L_g_mH: 1.2
+  R_g_ohm: 0.03
+switching_and_sampling:
+  switching_frequency_Hz: 10000
+  controller_period_us: 100
+  emt_step_us: 1
+  identification_step_ms: 1
+  pwm_dead_time_us: 2
+power_filters:
+  tau_P_s: 0.0318
+  tau_Q_s: 0.0318
+droop:
+  k_p_pu: 0.02
+  k_q_pu: 0.05
+  active_power_margin_pu: 0.2
+voltage_loop:
+  K_pv: 0.52
+  K_iv: 15.0
+current_loop:
+  K_pc: 1.25
+  K_ic: 50.0
+  K_aw: 10.0
+  K_ad_pu: 0.15
+  I_max_pu: 1.2
+  limiter_priority: reactive current (q-axis) first under d-axis voltage alignment
+modulation:
+  V_max_pu: 1.2
+park_transform:
+  type: amplitude-invariant
+  d_axis_alignment: voltage vector
+  q_sign: Q=(3/2)(v_cq*i_gd-v_cd*i_gq); with v_cq≈0, reactive power is controlled
+    by q-axis current
+power_equations:
+  P: (3/2)*(v_cd*i_gd + v_cq*i_gq)
+  Q: (3/2)*(v_cq*i_gd - v_cd*i_gq)
+  sign_convention_note: Amplitude-invariant Park transform; with v_cq≈0, positive
+    reactive injection corresponds to negative q-axis current.
+manuscript_alignment:
+  date: '2026-08-13'
+  section_2_1_parameters_verified: true
+  equation_10_11_distinct: true

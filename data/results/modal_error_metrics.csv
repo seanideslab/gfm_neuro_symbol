@@ -1,0 +1,7 @@
+quantity,reference,candidate,value,unit_or_definition,note
+EMT_Prony_frequency,EMT/Prony,,19.480565,Hz,122.4 rad/s divided by 2*pi
+Symbolic_frequency,Symbolic RC-ChebKAN,,19.337326,Hz,121.5 rad/s divided by 2*pi
+Averaged_reference_frequency,Averaged reference,,2.944366,Hz,18.5 rad/s divided by 2*pi
+complex_eigenvalue_relative_error,EMT/Prony,Symbolic RC-ChebKAN,0.924323,percent,abs(lambda_sym-lambda_emt)/abs(lambda_emt)*100
+damping_ratio_absolute_difference,EMT/Prony,Symbolic RC-ChebKAN,0.003000,absolute zeta,abs(0.121-0.124)
+damping_ratio_relative_difference,EMT/Prony,Symbolic RC-ChebKAN,2.419355,percent,abs(zeta_sym-zeta_emt)/zeta_emt*100

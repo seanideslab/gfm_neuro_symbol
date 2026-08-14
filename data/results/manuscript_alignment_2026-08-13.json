@@ -1,0 +1,23 @@
+{
+  "manuscript_file_alignment": "MAKE_GFM_neuro_symbolic_0813_restructured_v2_corrected.docx",
+  "date": "2026-08-13",
+  "section_2_1": {
+    "base_and_controller_parameters": "verified against configs/system_parameters.yaml",
+    "power_equation_10": "P=(3/2)*(v_cd*i_gd+v_cq*i_gq)",
+    "power_equation_11": "Q=(3/2)*(v_cq*i_gd-v_cd*i_gq)",
+    "equations_10_and_11_are_distinct": true
+  },
+  "section_3_5": {
+    "EMT_Prony_frequency_Hz": 19.480565,
+    "Symbolic_complex_eigenvalue_relative_error_percent": 0.924323,
+    "Symbolic_damping_ratio_absolute_difference": 0.0030000000000000027,
+    "Symbolic_damping_ratio_relative_difference_percent": 2.419355,
+    "error_metrics_are_separate": true,
+    "averaged_reference_frequency_Hz": 2.944366,
+    "baseline_mode_mismatch_explanation_documented": true
+  },
+  "bibliography_note": {
+    "reference_51_body_citation_count_target": 1,
+    "dataset_effect": "none; citation-frequency reduction is manuscript-only"
+  }
+}

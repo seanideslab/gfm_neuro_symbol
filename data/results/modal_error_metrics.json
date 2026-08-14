@@ -1,0 +1,32 @@
+{
+  "source_table": "data/results/table8_modal.csv",
+  "date_aligned": "2026-08-13",
+  "dominant_mode": {
+    "averaged_reference": {
+      "lambda_real_per_s": -5.2,
+      "lambda_imag_rad_per_s": 18.5,
+      "frequency_Hz_from_imaginary_part": 2.9443664472000637,
+      "interpretation": "Least-damped oscillatory pole of the uncorrected averaged skeleton; not treated as a small frequency perturbation of the EMT dominant ring-down mode."
+    },
+    "EMT_Prony": {
+      "lambda_real_per_s": -15.3,
+      "lambda_imag_rad_per_s": 122.4,
+      "frequency_Hz_from_imaginary_part": 19.48056503444799,
+      "damping_ratio": 0.124
+    },
+    "Symbolic_RC_ChebKAN": {
+      "lambda_real_per_s": -14.6,
+      "lambda_imag_rad_per_s": 121.5,
+      "frequency_Hz_from_imaginary_part": 19.337325585665283,
+      "damping_ratio": 0.121
+    }
+  },
+  "error_metrics": {
+    "relative_complex_eigenvalue_error_percent": 0.9243225897863407,
+    "definition": "100*abs(lambda_symbolic-lambda_EMT)/abs(lambda_EMT)",
+    "damping_ratio_absolute_difference": 0.0030000000000000027,
+    "damping_ratio_relative_difference_percent": 2.4193548387096793,
+    "metric_distinction": "Complex-eigenvalue error and damping-ratio error quantify different properties and must not be conflated."
+  },
+  "baseline_mode_mismatch_note": "The averaged reference pole (-5.2 ± j18.5 rad/s, about 2.94 Hz) and EMT/Prony pole (-15.30 ± j122.4 rad/s, about 19.48 Hz) are treated as a baseline mode mismatch. The uncorrected averaged skeleton omits or homogenizes PWM switching, dead-time, sampled-data effects, and the remaining EMT-to-envelope discrepancy; residual correction shifts the dominant branch close to EMT/Prony."
+}

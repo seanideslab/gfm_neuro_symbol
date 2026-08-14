@@ -1,0 +1,33 @@
+================================================================================
+RELEASE VALIDATION REPORT
+================================================================================
+
+Project: gfm_neuro_symbol
+Date: 2026-08-14
+Release Version: v1.0.0
+
+================================================================================
+
+VALIDATION STATUS: COMPLETE
+
+RELEASE VALIDATION: COMPLETE
+
+================================================================================
+
+Details:
+- Repository: https://github.com/seanideslab/gfm_neuro_symbol
+- DOI: 10.5281/zenodo.21881580
+- License: MIT
+
+All required checks passed:
+✓ LICENSE file present
+✓ CITATION.cff with repository-code
+✓ CITATION.cff with DOI
+✓ System parameters configuration valid
+✓ Modal error-metric audit present and valid
+✓ Manuscript-alignment audit JSON present
+✓ HIL test environment data present
+✓ HIL raw logs present and valid
+✓ Prony source-verification record present
+
+================================================================================

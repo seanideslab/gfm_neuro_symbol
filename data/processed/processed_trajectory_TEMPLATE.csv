@@ -1,2 +1,0 @@
-trajectory_id,scenario_id,split,time_s,i_fd,i_fq,v_cd,v_cq,i_gd,i_gq,P_f,Q_f,delta,xi_vd,xi_vq,xi_id,xi_iq,z_id,z_iq,P_star,Q_star,V_star,omega_star,SCR,X_over_R,tau_d_s,m_limit,m_sat
-EXAMPLE_PLACEHOLDER_NOT_EVIDENCE,,,,,,,,,,,,,,,,,,,,,,,,,,,

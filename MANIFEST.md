@@ -23,7 +23,7 @@
 - `data/metadata/scenario_split_summary.csv`
 - `data/metadata/trajectory_schema.csv`
 - `data/processed/README.md`
-- `data/processed/processed_trajectory_TEMPLATE.csv`
+- `data/processed/processed_trajectory_example.csv`
 - `data/prony/bootstrap_modes_TEMPLATE.csv`
 - `data/prony/damping_ratio_consistency_correction.json`
 - `data/prony/prony_bootstrap_partial_supplied.csv`

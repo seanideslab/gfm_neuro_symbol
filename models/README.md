@@ -1,14 +1,12 @@
-# Trained Model Files
+# Synthetic Example Checkpoints
 
-Add the actual trained state dictionaries/checkpoints used for the reported results.
+This directory contains deterministic synthetic PyTorch state dictionaries for repository validation and serialization checks. These are not trained publication weights.
 
-Recommended:
-- `rc_chebkan_seed_<id>.pt`
-- `rc_spline_kan_seed_<id>.pt`
-- `mlp_seed_<id>.pt`
-- baseline checkpoints needed for reproduction
-- a mapping file: checkpoint -> seed -> config hash -> manuscript result
+Included validation checkpoints:
+- `seed_42.pt`
+- `seed_1024.pt`
+- `seed_2048.pt`
+- `seed_31337.pt`
+- `seed_999.pt`
 
-Do not upload vendor-proprietary binaries.
-
-Current status: `EXAMPLE_PLACEHOLDER_NOT_EVIDENCE`.
+Replace these with actual trained checkpoints before making a reproducibility claim.

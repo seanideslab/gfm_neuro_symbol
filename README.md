@@ -6,14 +6,16 @@ Reproducibility and data-release package for the manuscript submitted to *Machin
 
 ## Already populated from the manuscript
 
-This scaffold contains:
+This preparation package contains:
 - system and controller parameters;
 - RC-ChebKAN / GSR hyperparameters;
 - SINDy-KAN search settings;
 - scenario split summaries;
 - principal NRMSE, ablation, symbolic-complexity, modal, paired-statistics, validity-domain, and HIL summaries;
 - the four representative SI-unit symbolic residual equations;
-- templates for the experiment outputs that still need to be copied from the original run folders.
+- clearly labeled placeholders for experiment outputs that are not present in this snapshot.
+
+The package does not claim to contain trained weights, the complete processed trajectory archive, exact scenario split IDs, or raw per-seed GSR/SymPy exports. See `DATA_AVAILABILITY.md` before citing or archiving this snapshot.
 
 ## Still required from the actual experiments
 
@@ -51,7 +53,7 @@ Proprietary MATLAB/Simulink, Simscape Electrical, OPAL-RT, and vendor-specific c
 
 ## Data-integrity note for this preparation release
 
-Some newly supplied summaries do not exactly reproduce previously reported manuscript statistics. See `docs/DATA_INTEGRITY_AUDIT.md`. Synthetic DSP/Prony example files are isolated under `data/synthetic_examples/` and are explicitly ineligible as experimental evidence.
+Some newly supplied summaries do not exactly reproduce previously reported manuscript statistics. See `docs/DATA_INTEGRITY_AUDIT.md`. Synthetic DSP/Prony example files are isolated under `examples/synthetic_non_evidence/` and are explicitly ineligible as experimental evidence.
 
 ## HIL timing evidence
 The measured DSP timing campaign is documented by `data/results/HIL_test_environment.json` (10,000-call aggregate test environment/statistics) and `data/hil/HIL_raw_logs.csv` (25-row representative measured excerpt). The excerpt is provided for auditability while the aggregate JSON records the full-campaign statistics.

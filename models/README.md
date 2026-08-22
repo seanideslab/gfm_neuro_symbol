@@ -1,12 +1,5 @@
-# Synthetic Example Checkpoints
+# Trained Checkpoints
 
-This directory contains deterministic synthetic PyTorch state dictionaries for repository validation and serialization checks. These are not trained publication weights.
+No trained publication checkpoints are included in this preparation release.
 
-Included validation checkpoints:
-- `seed_42.pt`
-- `seed_1024.pt`
-- `seed_2048.pt`
-- `seed_31337.pt`
-- `seed_999.pt`
-
-Replace these with actual trained checkpoints before making a reproducibility claim.
+Synthetic validation checkpoints were removed and must not be used as evidence. Before archival, add the actual checkpoints from the five training seeds together with their architecture metadata and SHA-256 checksums, or keep the manuscript wording explicit that trained weights are unavailable.

@@ -27,6 +27,61 @@ for path in ROOT.rglob("*"):
 if not (ROOT/"LICENSE").exists():
     errors.append("Root LICENSE is missing")
 
+def evidence_status(label, condition, requirement):
+    if condition:
+        return
+    message = f"{label} is unavailable: {requirement}"
+    if args.public_release:
+        errors.append(message)
+    else:
+        warnings.append(message)
+
+checkpoint_files = list((ROOT/"models").glob("*.pt")) if (ROOT/"models").exists() else []
+evidence_status(
+    "Trained publication checkpoints",
+    bool(checkpoint_files) and not any("synthetic" in p.name.lower() for p in checkpoint_files),
+    "provide real trained checkpoints or state that weights are unavailable",
+)
+
+processed_archives = [
+    p for p in (ROOT/"data/processed").glob("*")
+    if p.suffix.lower() in {".h5", ".hdf5", ".parquet"}
+]
+checksum_files = [
+    p for p in (ROOT/"data/processed").glob("*")
+    if p.suffix.lower() in {".sha256", ".sha256sum"}
+]
+evidence_status(
+    "Complete processed trajectory archive",
+    bool(processed_archives) and bool(checksum_files),
+    "provide an HDF5/Parquet archive and its SHA-256 checksum",
+)
+
+split_file = ROOT/"data/splits/scenario_ids.csv"
+split_available = split_file.exists()
+if split_available:
+    split_text = split_file.read_text(encoding="utf-8")
+    split_available = "EXAMPLE_PLACEHOLDER_NOT_EVIDENCE" not in split_text and len(split_text.splitlines()) > 1
+evidence_status(
+    "Exact scenario split IDs",
+    split_available,
+    "provide data/splits/scenario_ids.csv with real scenario memberships",
+)
+
+raw_symbolic_files = [ROOT/"data/symbolic/seed_equations.csv", ROOT/"data/symbolic/seed_coefficients.csv"]
+symbolic_available = all(p.exists() for p in raw_symbolic_files)
+if symbolic_available:
+    symbolic_available = all(
+        "not raw GSR/SymPy export" not in p.read_text(encoding="utf-8")
+        and "EXAMPLE_PLACEHOLDER_NOT_EVIDENCE" not in p.read_text(encoding="utf-8")
+        for p in raw_symbolic_files
+    )
+evidence_status(
+    "Raw per-seed GSR/SymPy exports",
+    symbolic_available,
+    "provide seed_equations.csv and seed_coefficients.csv from the actual export",
+)
+
 bad_syn = [p for p in (ROOT/"data").rglob("*") if p.is_file() and "synthetic" in p.name.lower()]
 if bad_syn:
     errors.append("Synthetic files remain under data/ evidence folders")

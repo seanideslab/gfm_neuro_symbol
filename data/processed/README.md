@@ -1,5 +1,9 @@
 # Processed Trajectory Data
 
+## Current status
+
+The full processed trajectory archive is **not included** in this preparation release. The example CSV is a placeholder and is not experimental evidence. No Zenodo DOI, HDF5 archive, or SHA-256 checksum is claimed here.
+
 The paper identifies envelope-level dynamics at **1 ms** after dq transformation, anti-alias filtering, PWM-period averaging, and resampling from the switching-level EMT simulation.
 
 Recommended release format:
@@ -7,13 +11,11 @@ Recommended release format:
 - CSV only for small examples.
 - One row per time sample with `trajectory_id` and `scenario_id`.
 
-Before release:
-1. Add the actual processed trajectory archive here or link to the DOI archive.
-2. Record the SHA-256 checksum.
-3. Document whether command variables are stored in SI or per unit.
-4. Replace `EXAMPLE_PLACEHOLDER_NOT_EVIDENCE` preprocessing fields in `configs/preprocessing.yaml`.
+Before a public reproducibility claim:
+1. Add the complete processed trajectory archive here or link to its DOI archive.
+2. Record the SHA-256 checksum for the exact archive.
+3. Add the complete scenario split ID file and document its relationship to the archive.
+4. Document whether command variables are stored in SI or per unit.
+5. Replace `EXAMPLE_PLACEHOLDER_NOT_EVIDENCE` preprocessing fields in `configs/preprocessing.yaml`.
 
-External archive:
-- DOI / URL: `EXAMPLE_PLACEHOLDER_NOT_EVIDENCE`
-- Archive filename: `EXAMPLE_PLACEHOLDER_NOT_EVIDENCE`
-- SHA-256: `EXAMPLE_PLACEHOLDER_NOT_EVIDENCE`
+External archive: not assigned in this release.
